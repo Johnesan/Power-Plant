@@ -13,7 +13,7 @@ namespace Power_Plant
         {
             InitializeComponent();
 
-            MainPage = new Power_Plant.MainPage();
+            MainPage = new Power_Plant.MainPage()hey;
         }
 
         protected override void OnStart()
