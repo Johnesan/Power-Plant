@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
-
+<style name="Theme.Splash" parent="MainTheme.Base">
+  <item name="android:windowBackground">@drawable/splash</item>
+<item name="windowNoTitle">true</item>
+</style>
+  <style name="splashscreen" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+      <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+  
+  </style>
   <style name="MainTheme" parent="MainTheme.Base">
   </style>
   <!-- Base theme applied no matter what API -->
@@ -11,12 +21,15 @@
     <item name="windowActionBar">false</item>
     <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette -->
     <!-- colorPrimary is used for the default action bar background -->
-    <item name="colorPrimary">#2196F3</item>
+    <item name="colorPrimary">#F44336</item>
     <!-- colorPrimaryDark is used for the status bar -->
-    <item name="colorPrimaryDark">#1976D2</item>
+    <item name="colorPrimaryDark">#D32F2F</item>
     <!-- colorAccent is used as the default value for colorControlActivated
          which is used to tint widgets -->
-    <item name="colorAccent">#FF4081</item>
+    <item name="colorAccent">#4CAF50</item>
+    <item name="colorControlNormal">#4CAF50</item>
+    <item name="colorControlHighlight">#4CAF50</item>
+    <item name="colorControlActivated">#4CAF50</item>
     <!-- You can also set colorControlNormal, colorControlActivated
          colorControlHighlight and colorSwitchThumbNormal. -->
     <item name="windowActionModeOverlay">true</item>
@@ -25,6 +38,6 @@
   </style>
 
   <style name="AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
-    <item name="colorAccent">#FF4081</item>
+    <item name="colorAccent">#4CAF50</item>
   </style>
 </resources>
