@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Power_Plant.Views.GenerationSettlementReport"
+             xmlns:ViewModels="clr-namespace:Power_Plant.ViewModels;assembly=Power_Plant">
+    <ContentPage.BindingContext>
+        <ViewModels:GenerationSettlementReportViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+  
+
+        <ScrollView>
+            <StackLayout Padding="15,20,15,20" VerticalOptions="StartAndExpand">
+                <Grid RowSpacing="2" ColumnSpacing="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="45"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="1G5:" FontSize="Medium" VerticalOptions="Center"/>
+                    <Entry Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="5" Text="{Binding IG5}" VerticalOptions="Center" />
+                    <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Text="1G6:" VerticalOptions="Center" FontSize="Medium"/>
+                    <Entry Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="5" Text="{Binding IG6}"  VerticalOptions="Center"/>
+                    <Label Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Text="1G11:" VerticalOptions="Center" FontSize="Medium"/>
+                    <Entry Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="5" Text="{Binding IG11}" VerticalOptions="Center" />
+                    <Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Text="1G12:" VerticalOptions="Center" FontSize="Medium"/>
+                    <Entry Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="5" Text="{Binding IG12}" VerticalOptions="Center"/>
+                   
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
